@@ -1,0 +1,96 @@
+<!-- detailed_about_me_layout.xml -->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="@android:color/background_light">
+
+    <!-- Circular Profile Picture -->
+    <ImageView
+        android:id="@+id/profileImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/avatar"
+        android:scaleType="centerCrop"
+        android:background="@drawable/circle_box"/>
+
+    <!-- Styled Name -->
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aashish Adhikari"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/app_color"
+        android:layout_below="@id/profileImageView"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Detailed Bio -->
+    <TextView
+        android:id="@+id/bioTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Passionate Android Developer with a love for creating elegant solutions to complex problems. I enjoy turning ideas into reality and constantly learning new technologies."
+        android:textColor="@android:color/darker_gray"
+        android:layout_below="@id/nameTextView"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- Social Media Links -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/bioTextView"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_launcher_foreground"
+            />
+
+        <TextView
+            android:id="@+id/emailTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="asis.adh@gmail.com"
+            android:layout_marginStart="8dp"
+            android:clickable="true"
+            />
+
+        <Space
+            android:layout_width="16dp"
+            android:layout_height="1dp"/>
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_launcher_foreground"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\@myHandel"
+            android:layout_marginStart="8dp"/>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Logout"
+        android:background="@drawable/secondary_button"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>

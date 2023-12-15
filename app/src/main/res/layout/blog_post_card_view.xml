@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Cover Image -->
+        <ImageView
+            android:id="@+id/coverImageView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_background"/>
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sample Blog Post Title"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_below="@id/coverImageView"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Author and Date -->
+        <LinearLayout
+            android:id="@+id/smallDescriptionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/titleTextView"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/authorTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="By Author Name"
+                android:textSize="14sp"
+                android:textColor="@android:color/darker_gray"/>
+
+            <View
+                android:layout_width="8dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/darker_gray"/>
+
+            <TextView
+                android:id="@+id/dateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="May 20, 2023"
+                android:textSize="14sp"
+                android:textColor="@android:color/darker_gray"/>
+        </LinearLayout>
+
+        <!-- Blog Post Content -->
+        <TextView
+            android:id="@+id/contentTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget ex nec ligula aliquet blandit vel sit amet odio..."
+            android:layout_below="@id/smallDescriptionTextView"
+            android:layout_marginTop="16dp"/>
+
+        <ImageButton
+            android:id="@+id/shareButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@android:drawable/ic_menu_share"
+            android:layout_alignParentEnd="true"
+            />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

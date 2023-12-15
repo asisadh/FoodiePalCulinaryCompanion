@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Receipe"
+        android:id="@+id/menuReceipe"/>
+    <item android:title="Meal Planner"
+        android:id="@+id/menuMealPlanner"/>
+    <item android:title="Blog"
+        android:id="@+id/menuBlog"/>
+</menu>
