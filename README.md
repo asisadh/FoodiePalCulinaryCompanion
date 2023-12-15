@@ -3,10 +3,10 @@ FoodiePal - Culinary Companion is a simple recipe app. That has five tabs to sho
 
 ## Screenshots
 ### Login
-https://github.com/asisadh/FoodiePalCulinaryCompanion/blob/main/screenshots/Screenshot%202023-12-15%20at%2012.43.57%E2%80%AFPM.png
+![](https://github.com/asisadh/FoodiePalCulinaryCompanion/blob/main/screenshots/Screenshot%202023-12-15%20at%2012.43.57%E2%80%AFPM.png?raw=true)
 
 ### Register
-https://github.com/asisadh/FoodiePalCulinaryCompanion/blob/main/screenshots/Screenshot%202023-12-15%20at%2012.44.08%E2%80%AFPM.png
+![](https://github.com/asisadh/FoodiePalCulinaryCompanion/blob/main/screenshots/Screenshot%202023-12-15%20at%2012.44.08%E2%80%AFPM.png?raw=true)
 
 ### Recipe Page
 
